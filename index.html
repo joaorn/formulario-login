@@ -2,12 +2,12 @@
 <html lang="pr-br">
 <head>
     <meta charset="UTF-8">
-    <title>Form Contato</title>
+    <title>Formulário para Contato</title>
 </head>
 <style>
     *{margin: 0;padding: 0;box-sizing: border-box;}
     body{
-        background-color: blueviolet;
+        background-color: #5F9EA0;
     }
 
     form{
@@ -23,7 +23,7 @@
 
     form h3{
         text-align: center;
-        color: blueviolet;
+        color: #5F9EA0;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
     }
 
@@ -40,7 +40,7 @@
         width: 100%;
         height: 30px;
         cursor: pointer;
-        background: blueviolet;
+        background: #5F9EA0;
         color: white
         border: 0;
         border-radius: 20px;
@@ -49,7 +49,7 @@
     }
 
     form input[type=submit]:hover{
-        background-color: rgb(54, 50, 57);
+        background-color: #4f7c7e;
     }
 
 </style>
@@ -58,13 +58,29 @@
     <form>
         <h3>Entrar em contato</h3>
         <input id="email" type="text" name="email" placeholder="Seu e-mail..." />
-        <input type="password" name="senha" placeholder="Sua senha..." />
+        <input id="password" type="password" name="senha" placeholder="Sua senha..." />
         <input type="submit" name="ação" volue="Enviar" />
     </form>
     <script>
     var email = document.getElementById('email');
+    var password = document.getElementById('password');
 
-    email.add
+    email.addEventListener('focus',()=>{
+        email.style.borderColor =  "#5F9EA0";
+    });
+
+    email.addEventListener('bluer',()=>{
+        email.style.borderColor =  "#ccc";
+    });
+
+    password.addEventListener('focus',()=>{
+        password.style.borderColor =  "#5F9EA0";
+    });
+
+    password.addEventListener('bluer',()=>{
+        password.style.borderColor =  "#ccc";
+    });
+
     </script>
 </body>
 </html>
